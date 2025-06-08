@@ -10,7 +10,7 @@
 
 	$: if (localSubclass && $currentCharacter.class) {
 		let temp = $currentCharacter.class.subclasses.find(x => x.name === localSubclass)
-		if (temp) {
+		if (temp && temp.name !== $currentCharacter.subclass?.name) {
 			updateCharacter(x => x.setSubclass(temp))
 		}
 	} else if ($currentCharacter.subclass) {
@@ -183,7 +183,9 @@
 							{#each domain.cards as card}
 								<div class="domain-card"
 										 class:domain-card-selected={$currentCharacter.domain_cards.some(x => x.name === card.name)}
-										 on:click={() => updateCharacter(x => x.setDomainCard(card))}
+										 on:click={() => {
+											 updateCharacter(x => x.setDomainCard(card))
+										 }}
 										 on:keydown
 										 tabindex="-1"
 										 role="button"

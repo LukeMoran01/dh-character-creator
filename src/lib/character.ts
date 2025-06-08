@@ -71,6 +71,7 @@ export class Character {
 			this.evasion -= this.class.starting_evasion;
 			this.hit_points -= this.class.starting_hit_points;
 			this.class_item = undefined;
+			this.domain_cards = []
 		}
 
 		if (!classData) {
@@ -101,19 +102,38 @@ export class Character {
 	}
 
 	public setSubclass(subclassData: Subclass | null) {
-		console.log(this.features)
-
 		if (this.subclass) {
 			this.features = this.features.filter(
 				(x) => !this.subclass!.foundation_features.some((y) => y.name === x.name)
 			);
+
+			if (this.subclass.name === "School of War") this.hit_points -= 1
+			if (this.subclass.name === "School of Knowledge") {
+				this.max_domain_cards -= 1
+				if (this.domain_cards.length > this.max_domain_cards) this.domain_cards = this.domain_cards.slice(0, this.max_domain_cards)
+			}
+			if (this.subclass.name === "Vengeance") this.stress -= 1
+			if (this.subclass.name === "Stalwart") {
+				this.thresholds.major -= 1
+				this.thresholds.severe -= 1
+			}
 		}
+
 		if (!subclassData) {
 			this.subclass = undefined
 			this.spellcast_trait = undefined
 			this.updateLocalStore();
 			return
 		}
+
+		if (subclassData.name === "School of War") this.hit_points += 1
+		if (subclassData.name === "School of Knowledge") this.max_domain_cards += 1
+		if (subclassData.name === "Vengeance") this.stress += 1
+		if (subclassData.name === "Stalwart") {
+			this.thresholds.major += 1
+			this.thresholds.severe += 1
+		}
+
 		this.features = [...this.features, ...subclassData.foundation_features];
 		this.spellcast_trait = subclassData.spellcast_trait;
 		/*
@@ -128,15 +148,31 @@ export class Character {
 			this.features = this.features.filter(
 				(x) => !this.ancestry!.features.some((y) => y.name === x.name)
 			);
+
+			// Race boons
+			if (this.ancestry.name === "Human") this.stress -= 1
+			if (this.ancestry.name === "Giant") this.hit_points -= 1
+			if (this.ancestry.name === "Simiah") this.evasion -= 1
+			if (this.ancestry.name === "Galapa") {
+				this.thresholds.major -= 1
+				this.thresholds.severe -= 1
+			}
 		}
 		if (!ancestryData) {
 			this.ancestry = undefined
 			this.updateLocalStore();
 			return
 		}
-		/*
-		TODO Galapa +1s thresholds, Giant +1s hp, Human +1s stress, Simiah +1s evasion
-		 */
+
+		// Race boons
+		if (ancestryData.name === "Human") this.stress += 1
+		if (ancestryData.name === "Giant") this.hit_points += 1
+		if (ancestryData.name === "Simiah") this.evasion += 1
+		if (ancestryData.name === "Galapa") {
+			this.thresholds.major += 1
+			this.thresholds.severe += 1
+		}
+
 		this.features = [...this.features, ...ancestryData.features];
 		this.ancestry = ancestryData;
 		this.updateLocalStore();
@@ -161,7 +197,6 @@ export class Character {
 
 	public setArmor(armorData: Armor | null) {
 		if (this.armor) {
-			if (this.armor.feature) this.features = this.features.filter((x) => this.armor!.feature.name !== x.name);
 			this.thresholds.major -= this.armor.major_threshold;
 			this.thresholds.severe -= this.armor.severe_threshold;
 			this.armor_score -= this.armor.base_score;
@@ -177,14 +212,12 @@ export class Character {
 		/*
 		TODO Armor features that affect traits etc
 		 */
-		if (armorData.feature) this.features = [...this.features, armorData.feature];
 		this.armor = armorData;
 		this.updateLocalStore();
 	}
 
 	public setPrimary(weapon: PrimaryWeapon | null) {
 		if (this.primary_weapon) {
-			if (this.primary_weapon.feature) this.features = this.features.filter((x) => this.primary_weapon!.feature.name !== x.name);
 			this.burden -= this.primary_weapon.burden
 		}
 
@@ -195,7 +228,6 @@ export class Character {
 		}
 
 		this.burden += weapon.burden
-		if (weapon.feature) this.features = [...this.features, weapon.feature];
 		this.primary_weapon = weapon
 		this.updateLocalStore();
 		return
@@ -203,7 +235,6 @@ export class Character {
 
 	public setSecondary(weapon: SecondaryWeapon | null) {
 		if (this.secondary_weapon) {
-			if (this.secondary_weapon.feature) this.features = this.features.filter((x) => this.secondary_weapon!.feature.name !== x.name);
 			this.burden -= this.secondary_weapon.burden
 		}
 
@@ -214,7 +245,6 @@ export class Character {
 		}
 
 		this.burden += weapon.burden
-		if (weapon.feature) this.features = [...this.features, weapon.feature];
 		this.secondary_weapon = weapon
 		this.updateLocalStore();
 		return
