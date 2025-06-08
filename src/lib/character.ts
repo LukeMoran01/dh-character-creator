@@ -249,6 +249,11 @@ export class Character {
 		this.updateLocalStore();
 	}
 
+	public updateName(name: string) {
+		this.name = name
+		this.updateLocalStore();
+	}
+
 	updateLocalStore() {
 		const characterData = JSON.stringify({
 			...this

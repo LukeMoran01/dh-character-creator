@@ -6,12 +6,13 @@
     import { currentCharacter, updateCharacter } from '$lib/stores/selections';
 
     let characterName = $currentCharacter.name || '';
+    console.log(characterName)
 
     function updateName(name: string) {
         updateCharacter(char => {
-            char.name = name;
+            char.updateName(name);
             return char;
-        });
+        });0
     }
 
     let modifiers = [
@@ -73,7 +74,7 @@
                     id="character-name"
                     type="text" 
                     placeholder="Enter character name..." 
-                    value={characterName}
+                    bind:value={characterName}
                     on:input={(e) => updateName(e.currentTarget.value)}
                 />
             </div>
