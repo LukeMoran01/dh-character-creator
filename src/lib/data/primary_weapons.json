@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Broadsword",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Agility",
+    "range": "Melee",
+    "damage": "d8 phy",
+    "burden": 1,
+    "feature": {
+      "name": "Reliable",
+      "feature": "+1 to attack rolls"
+    }
+  },
+  {
+    "name": "Longsword",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Agility",
+    "range": "Melee",
+    "damage": "d8+3 phy",
+    "burden": 2,
+    "feature": null
+  },
+  {
+    "name": "Battleaxe",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Strength",
+    "range": "Melee",
+    "damage": "d10+3 phy",
+    "burden": 2,
+    "feature": null
+  },
+  {
+    "name": "Greatsword",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Strength",
+    "range": "Melee",
+    "damage": "d10+3 phy",
+    "burden": 2,
+    "feature": {
+      "name": "Massive",
+      "feature": "−1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result."
+    }
+  },
+  {
+    "name": "Mace",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Strength",
+    "range": "Melee",
+    "damage": "d8+1 phy",
+    "burden": 1,
+    "feature": null
+  },
+  {
+    "name": "Warhammer",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Strength",
+    "range": "Melee",
+    "damage": "d12+3 phy",
+    "burden": 2,
+    "feature": {
+      "name": "Heavy",
+      "feature": "−1 to Evasion"
+    }
+  },
+  {
+    "name": "Dagger",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Finesse",
+    "range": "Melee",
+    "damage": "d8+1 phy",
+    "burden": 1,
+    "feature": null
+  },
+  {
+    "name": "Quarterstaff",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Instinct",
+    "range": "Melee",
+    "damage": "d10+3 phy",
+    "burden": 2,
+    "feature": null
+  },
+  {
+    "name": "Cutlass",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Presence",
+    "range": "Melee",
+    "damage": "d8+1 phy",
+    "burden": 1,
+    "feature": null
+  },
+  {
+    "name": "Rapier",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Presence",
+    "range": "Melee",
+    "damage": "d8 phy",
+    "burden": 1,
+    "feature": {
+      "name": "Quick",
+      "feature": "When you make an attack, you can mark a Stress to target another creature within range."
+    }
+  },
+  {
+    "name": "Halberd",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Strength",
+    "range": "Very Close",
+    "damage": "d10+2 phy",
+    "burden": 2,
+    "feature": {
+      "name": "Cumbersome",
+      "feature": "−1 to Finesse"
+    }
+  },
+  {
+    "name": "Spear",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Finesse",
+    "range": "Very Close",
+    "damage": "d10+2 phy",
+    "burden": 2,
+    "feature": {
+      "name": "Cumbersome",
+      "feature": "−1 to Finesse"
+    }
+  },
+  {
+    "name": "Shortbow",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Agility",
+    "range": "Far",
+    "damage": "d6+3 phy",
+    "burden": 2,
+    "feature": null
+  },
+  {
+    "name": "Crossbow",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Finesse",
+    "range": "Far",
+    "damage": "d6+1 phy",
+    "burden": 1,
+    "feature": null
+  },
+  {
+    "name": "Longbow",
+    "tier": 1,
+    "type": "physical",
+    "trait": "Agility",
+    "range": "Very Far",
+    "damage": "d8+3 phy",
+    "burden": 2,
+    "feature": {
+      "name": "Cumbersome",
+      "feature": "−1 to Finesse"
+    }
+  },
+  {
+    "name": "Arcane Gauntlets",
+    "tier": 1,
+    "type": "magic",
+    "trait": "Strength",
+    "range": "Melee",
+    "damage": "d10+3 mag",
+    "burden": 2,
+    "feature": null
+  },
+  {
+    "name": "Hallowed Axe",
+    "tier": 1,
+    "type": "magic",
+    "trait": "Strength",
+    "range": "Melee",
+    "damage": "d8+1 mag",
+    "burden": 1,
+    "feature": null
+  },
+  {
+    "name": "Glowing Rings",
+    "tier": 1,
+    "type": "magic",
+    "trait": "Agility",
+    "range": "Very Close",
+    "damage": "d10+1 mag",
+    "burden": 2,
+    "feature": null
+  },
+  {
+    "name": "Hand Runes",
+    "tier": 1,
+    "type": "magic",
+    "trait": "Instinct",
+    "range": "Very Close",
+    "damage": "d10 mag",
+    "burden": 1,
+    "feature": null
+  },
+  {
+    "name": "Returning Blade",
+    "tier": 1,
+    "type": "magic",
+    "trait": "Finesse",
+    "range": "Close",
+    "damage": "d8 mag",
+    "burden": 1,
+    "feature": {
+      "name": "Returning",
+      "feature": "When this weapon is thrown within its range, it appears in your hand immediately after the attack."
+    }
+  },
+  {
+    "name": "Shortstaff",
+    "tier": 1,
+    "type": "magic",
+    "trait": "Instinct",
+    "range": "Close",
+    "damage": "d8+1 mag",
+    "burden": 1,
+    "feature": null
+  },
+  {
+    "name": "Dualstaff",
+    "tier": 1,
+    "type": "magic",
+    "trait": "Instinct",
+    "range": "Far",
+    "damage": "d6+3 mag",
+    "burden": 2,
+    "feature": null
+  },
+  {
+    "name": "Scepter",
+    "tier": 1,
+    "type": "magic",
+    "trait": "Presence",
+    "range": "Far",
+    "damage": "d6 mag",
+    "burden": 2,
+    "feature": {
+      "name": "Versatile",
+      "feature": "This weapon can also be used with these statistics—Presence, Melee, d8."
+    }
+  },
+  {
+    "name": "Wand",
+    "tier": 1,
+    "type": "magic",
+    "trait": "Knowledge",
+    "range": "Far",
+    "damage": "d6+1 mag",
+    "burden": 1,
+    "feature": null
+  },
+  {
+    "name": "Greatstaff",
+    "tier": 1,
+    "type": "magic",
+    "trait": "Knowledge",
+    "range": "Very Far",
+    "damage": "d6 mag",
+    "burden": 2,
+    "feature": {
+      "name": "Powerful",
+      "feature": "On a successful attack, roll an additional damage die and discard the lowest result."
+    }
+  }
+]

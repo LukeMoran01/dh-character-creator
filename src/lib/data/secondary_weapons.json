@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Shortsword",
+    "tier": 1,
+    "trait": "Agility",
+    "range": "Melee",
+    "damage": "d8 phy",
+    "burden": 1,
+    "feature": {
+      "name": "Paired",
+      "feature": "+2 to primary weapon damage to targets within Melee range"
+    }
+  },
+  {
+    "name": "Round Shield",
+    "tier": 1,
+    "trait": "Strength",
+    "range": "Melee",
+    "damage": "d4 phy",
+    "burden": 1,
+    "feature": {
+      "name": "Protective",
+      "feature": "+1 to Armor Score"
+    }
+  },
+  {
+    "name": "Tower Shield",
+    "tier": 1,
+    "trait": "Strength",
+    "range": "Melee",
+    "damage": "d6 phy",
+    "burden": 1,
+    "feature": {
+      "name": "Barrier",
+      "feature": "+2 to Armor Score; −1 to Evasion"
+    }
+  },
+  {
+    "name": "Small Dagger",
+    "tier": 1,
+    "trait": "Finesse",
+    "range": "Melee",
+    "damage": "d8 phy",
+    "burden": 1,
+    "feature": {
+      "name": "Paired",
+      "feature": "+2 to primary weapon damage to targets within Melee range"
+    }
+  },
+  {
+    "name": "Whip",
+    "tier": 1,
+    "trait": "Presence",
+    "range": "Very Close",
+    "damage": "d6 phy",
+    "burden": 1,
+    "feature": {
+      "name": "Startling",
+      "feature": "Mark a Stress to crack the whip and force all adversaries within Melee range back to Close range."
+    }
+  },
+  {
+    "name": "Grappler",
+    "tier": 1,
+    "trait": "Finesse",
+    "range": "Close",
+    "damage": "d6 phy",
+    "burden": 1,
+    "feature": {
+      "name": "Hooked",
+      "feature": "On a successful attack, you can pull the target into Melee range."
+    }
+  },
+  {
+    "name": "Hand Crossbow",
+    "tier": 1,
+    "trait": "Finesse",
+    "range": "Far",
+    "damage": "d6+1 phy",
+    "burden": 1,
+    "feature": null
+  }
+]

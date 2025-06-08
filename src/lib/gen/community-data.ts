@@ -1,0 +1,86 @@
+
+import { type Community } from '$lib/communities';
+// Auto generated data
+export const Communities: { [key: string]: Community } = {
+  "highborne": {
+    "id": "highborne",
+    "name": "Highborne",
+    "description": "Being part of a highborne community means you're accustomed to a life of elegance, opulence, and prestige within the upper echelons of society [1]. Traditionally, members of a highborne community possess incredible material wealth [1]. While this can take a variety of forms depending on the community—including gold and other minerals, land, or controlling the means of production—this status always comes with power and influence [1]. Highborne place great value on titles and possessions, and there is little social mobility within their ranks [1]. Members of a highborne community often control the political and economic status of the areas in which they live due to their ability to influence people and the economy with their substantial wealth [1]. The health and safety of the less affluent people who live in these locations often hinges on the ability of this highborne ruling class to prioritize the well-being of their subjects over profit [1].",
+    "feature": {
+      "name": "Privilege",
+      "feature": "You have advantage on rolls to consort with nobles, negotiate prices, or leverage your reputation to get what you want [2]."
+    }
+  },
+  "loreborne": {
+    "id": "loreborne",
+    "name": "Loreborne",
+    "description": "Being part of a loreborne community means you’re from a society that favors strong academic or political prowess [2]. Loreborne communities highly value knowledge, frequently in the form of historical preservation, political advancement, scientific study, skill development, or lore and mythology compilation [2]. Most members of these communities research in institutions built in bastions of civilization, while some eclectic few thrive in gathering information from the natural world [2]. Some may be isolationists, operating in smaller enclaves, schools, or guilds and following their own unique ethos [2]. Others still wield their knowledge on a larger scale, making deft political maneuvers across governmental landscapes [3].",
+    "feature": {
+      "name": "Well-Read",
+      "feature": "You have advantage on rolls that involve the history, culture, or politics of a prominent person or place [3]."
+    }
+  },
+  "orderborne": {
+    "id": "orderborne",
+    "name": "Orderborne",
+    "description": "Being part of an orderborne community means you’re from a collective that focuses on discipline or faith, and you uphold a set of principles that reflect your experience there [3]. Orderborne are frequently some of the most powerful among the surrounding communities [3]. By aligning the members of their society around a common value or goal, such as a god, doctrine, ethos, or even a shared business or trade, the ruling bodies of these enclaves can mobilize larger populations with less effort [3]. While orderborne communities take a variety of forms—some even profoundly pacifistic—perhaps the most feared are those that structure themselves around military prowess [3]. In such a case, it’s not uncommon for orderborne to provide soldiers for hire to other cities or countries [3].",
+    "feature": {
+      "name": "Dedicated",
+      "feature": "Record three sayings or values your upbringing instilled in you [4]. Once per rest, when you describe how you’re embodying one of these principles through your current action, you can roll a d20 as your Hope Die [4]."
+    }
+  },
+  "ridgeborne": {
+    "id": "ridgeborne",
+    "name": "Ridgeborne",
+    "description": "Being part of a ridgeborne community means you’ve called the rocky peaks and sharp cliffs of the mountainside home [4]. Those who’ve lived in the mountains often consider themselves hardier than most because they’ve thrived among the most dangerous terrain many continents have to offer [4]. These groups are adept at adaptation, developing unique technologies and equipment to move both people and products across difficult terrain [4]. As such, ridgeborne grow up scrambling and climbing, making them sturdy and strong-willed [4]. Ridgeborne localities appear in a variety of forms—some cities carve out entire cliff faces, others construct castles of stone, and still more live in small homes on windblown peaks [4]. Outside forces often struggle to attack ridgeborne groups, as the small militias and large military forces of the mountains are adept at utilizing their high-ground advantage [4].",
+    "feature": {
+      "name": "Steady",
+      "feature": "You have advantage on rolls to traverse dangerous cliffs and ledges, navigate harsh environments, and use your survival knowledge [5]."
+    }
+  },
+  "seaborne": {
+    "id": "seaborne",
+    "name": "Seaborne",
+    "description": "Being part of a seaborne community means you lived on or near a large body of water [5]. Seaborne communities are built, both physically and culturally, around the specific waters they call home [5]. Some of these groups live along the shore, constructing ports for locals and travelers alike [5]. These harbors function as centers of commerce, tourist attractions, or even just a safe place to lay down one’s head after weeks of travel [5]. Other seaborne live on the water in small boats or large ships, with the idea of “home” comprising a ship and its crew, rather than any one landmass [5]. No matter their exact location, seaborne communities are closely tied to the ocean tides and the creatures who inhabit them [5]. Seaborne learn to fish at a young age, and train from birth to hold their breath and swim in even the most tumultuous waters [5]. Individuals from these groups are highly sought after for their sailing skills, and many become captains of vessels, whether within their own community, working for another, or even at the helm of a powerful naval operation [5].",
+    "feature": {
+      "name": "Know the Tide",
+      "feature": "You can sense the ebb and flow of life [6]. When you roll with Fear, place a token on your community card [6]. You can hold a number of tokens equal to your level [6]. Before you make an action roll, you can spend any number of these tokens to gain a +1 bonus to the roll for each token spent [6]. At the end of each session, clear all unspent tokens [6]."
+    }
+  },
+  "slyborne": {
+    "id": "slyborne",
+    "name": "Slyborne",
+    "description": "Being part of a slyborne community means you come from a group that operates outside the law, including all manner of criminals, grifters, and con artists [6]. Members of slyborne communities are brought together by their disreputable goals and their clever means of achieving them [6]. Many people in these communities have an array of unscrupulous skills: forging, thievery, smuggling, and violence [6]. People of any social class can be slyborne, from those who have garnered vast wealth and influence to those without a coin to their name [6]. To the outside eye, slyborne might appear to be ruffians with no loyalty, but these communities possess some of the strictest codes of honor which, when broken, can result in a terrifying end for the transgressor [6].",
+    "feature": {
+      "name": "Scoundrel",
+      "feature": "You have advantage on rolls to negotiate with criminals, detect lies, or find a safe place to hide [7]."
+    }
+  },
+  "underborne": {
+    "id": "underborne",
+    "name": "Underborne",
+    "description": "Being part of an underborne community means you’re from a subterranean society [7]. Many underborne live right beneath the cities and villages of other collectives, while some live much deeper [7]. These communities range from small family groups in burrows to massive metropolises in caverns of stone [7]. In many locales, underborne are recognized for their incredible boldness and skill that enable great feats of architecture and engineering [7]. Underborne are regularly hired for their bravery, as even the least daring among them has likely encountered formidable belowground beasts, and learning to dispatch such creatures is common practice amongst these societies [7]. Because of the dangers of their environment, many underborne communities develop unique nonverbal languages that prove equally useful on the surface [7].",
+    "feature": {
+      "name": "Low-Light Living",
+      "feature": "When you’re in an area with low light or heavy shadow, you have advantage on rolls to hide, investigate, or perceive details within that area [8]."
+    }
+  },
+  "wanderborne": {
+    "id": "wanderborne",
+    "name": "Wanderborne",
+    "description": "Being part of a wanderborne community means you’ve lived as a nomad, forgoing a permanent home and experiencing a wide variety of cultures [8]. Unlike many communities that are defined by their locale, wanderborne are defined by their traveling lifestyle [8]. Because of their frequent migration, wanderborne put less value on the accumulation of material possessions in favor of acquiring information, skills, and connections [8]. While some wanderborne are allied by a common ethos, such as a religion or a set of political or economic values, others come together after shared tragedy, such as the loss of their home or land [8]. No matter the reason, the dangers posed by life on the road and the choice to continue down that road together mean that wanderborne are known for their unwavering loyalty [8].",
+    "feature": {
+      "name": "Nomadic Pack",
+      "feature": "Add a Nomadic Pack to your inventory [9]. Once per session, you can spend a Hope to reach into this pack and pull out a mundane item that’s useful to your situation [9]. Work with the GM to figure out what item you take out [9]."
+    }
+  },
+  "wildborne": {
+    "id": "wildborne",
+    "name": "Wildborne",
+    "description": "Being part of a wildborne community means you lived deep within the forest [9]. Wildborne communities are defined by their dedication to the conservation of their homelands, and many have strong religious or cultural ties to the fauna they live among [9]. This results in unique architectural and technological advancements that favor sustainability over short-term, high-yield results [9]. It is a hallmark of wildborne societies to integrate their villages and cities with the natural environment and avoid disturbing the lives of the plants and animals [9]. While some construct their lodgings high in the branches of trees, others establish their homes on the ground beneath the forest canopy [9]. It’s not uncommon for wildborne to remain reclusive and hidden within their woodland homes [9].",
+    "feature": {
+      "name": "Lightfoot",
+      "feature": "Your movement is naturally silent [10]. You have advantage on rolls to move without being heard [10]."
+    }
+  }
+}
