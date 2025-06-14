@@ -136,9 +136,7 @@ export class Character {
 
 		this.features = [...this.features, ...subclassData.foundation_features];
 		this.spellcast_trait = subclassData.spellcast_trait;
-		/*
-		TODO Stalwart +1s thresholds, Vengeance +1s stress, Knowledge gets an additional domain card, Battlemage +1s hp
-		 */
+
 		this.subclass = subclassData;
 		this.updateLocalStore();
 	}
