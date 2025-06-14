@@ -2,6 +2,7 @@
 	import { currentCharacter} from '$lib/stores/selections';
 	import { Character } from '$lib/character';
 	import { Button } from '$lib/components/ui/button';
+	import {base} from '$app/paths'
 
 	let { children } = $props();
 
@@ -16,7 +17,7 @@
 
 <header class="header bg-secondary">
 	<div class="header-content">
-		<a href="/" class="logo">Character Creator</a>
+		<a href={base} class="logo">Character Creator</a>
 	</div>
 	<div class="header-content">
 		<Button onclick={async () => {await $currentCharacter.exportToPdf()}}>

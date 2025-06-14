@@ -3,14 +3,18 @@
 	import { goto } from '$app/navigation';
 	import { currentCharacter } from '$lib/stores/selections.js';
 	import { Character } from '$lib/character.js';
+	import {base} from '$app/paths'
 </script>
 
 <div class="main-page">
 	<div class="content">
 		<h1 class="title">Daggerheart Character Creator</h1>
 		<div class="buttons">
-			<Button href="/create" onclick={() => $currentCharacter = new Character()}>Create Character</Button>
-			<Button href="/create">
+			<Button onclick={() => {
+				$currentCharacter = new Character()
+				goto(`${base}/create`)
+			}}>Create Character</Button>
+			<Button onclick={() => goto(`${base}/create`)}>
 				View Current Character
 			</Button>
 		</div>

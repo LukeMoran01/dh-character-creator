@@ -7,6 +7,7 @@ import type { DomainCard } from '$lib/domains';
 import { formatFeature, type Feature } from '$lib/features';
 import { PDFDocument } from 'pdf-lib';
 import { toast } from "svelte-sonner";
+import {base} from '$app/paths'
 
 export class Character {
 	name?: string;
@@ -307,7 +308,7 @@ export class Character {
 	public async exportToPdf() {
 		console.log("exporting in fn")
 		// Load the existing PDF
-		const existingPdfBytes = await fetch('src/lib/data/daggerheart-char-sheet.pdf').then(res => res.arrayBuffer());
+		const existingPdfBytes = await fetch(`${base}/daggerheart-char-sheet.pdf`).then(res => res.arrayBuffer());
 		console.log(existingPdfBytes)
 		const pdfDoc = await PDFDocument.load(existingPdfBytes);
 
