@@ -4,5 +4,5 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit(), devtoolsJson()],
-
+	base: "/dh-character-creator/",
 });
